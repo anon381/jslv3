@@ -15,7 +15,7 @@ export default function Navigation() {
           <Link href="/sermons" className="px-4 py-2 rounded transition-colors hover:bg-[#ffc857] hover:text-[#1a1a40]">Sermons</Link>
         </li>
         <li>
-          <Link href="/visit" className="px-4 py-2 rounded transition-colors hover:bg-[#f0f0f0] hover:text-[#0b2545]">Visit</Link>
+          <Link href="/visit" className="px-4 py-2 rounded transition-colors hover:bg-[#e1ad01] hover:text-[#222222]">Visit</Link>
         </li>
         <li>
           <Link href="/contact" className="px-4 py-2 rounded transition-colors hover:bg-[#e1ad01] hover:text-[#222222]">Contact</Link>
