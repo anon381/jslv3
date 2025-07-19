@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navigation from "./Navigation";
 import ScrollGasp from "./ScrollGasp";
+import ParallaxBG from "./ParallaxBG";
 
 
  
@@ -8,9 +9,10 @@ export default function Home() {
   return (
     <>
       <Navigation />
+      <ParallaxBG />
       <main className="bg-[#f9f9f9] text-[#222222] min-h-screen p-8 pt-24 space-y-12">
         {/* Welcome Section */}
-        <ScrollGasp className="text-center min-h-[60vh] flex flex-col justify-center">
+        <ScrollGasp className="text-center min-h-[90vh] flex flex-col justify-center bg-[#f9f9f9]">
           <h1 className="text-3xl font-bold text-[#0b2545] mb-2">Encounter Jesus. Grow in the Word. Impact the World.</h1>
           <p className="text-lg mb-4">Join us for spirit-filled teachings, vibrant community, and engaging online presence.</p>
           <div className="flex flex-wrap justify-center gap-4 mb-4">
@@ -21,14 +23,14 @@ export default function Home() {
         </ScrollGasp>
 
         {/* About Section */}
-        <ScrollGasp className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6 min-h-[60vh] flex flex-col justify-center">
+        <ScrollGasp className="w-full bg-[#e1ad01]/80 rounded-lg shadow p-6 min-h-[90vh] flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-[#0b2545] mb-2">About JSL Church</h2>
           <p className="mb-2">We are a Bible-teaching, Christ-centered church committed to proclaiming Jesus Christ and preaching the word of God. Founded by Pastor Zenebech Gessesse and her husband Engineer Luelkal Kassie Eleven years ago, we are dedicated to spreading the Gospel and building a strong community of believers.</p>
           <button className="bg-[#0b2545] text-white px-4 py-2 rounded hover:bg-[#1a1a40]">Learn More About Our Story</button>
         </ScrollGasp>
 
         {/* Core Values Section */}
-        <ScrollGasp className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 min-h-[60vh] items-center">
+        <ScrollGasp className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 min-h-[90vh] items-center bg-[#0b2545]/80">
           <div className="bg-white rounded-lg shadow p-4">
             <h3 className="text-xl font-bold text-[#0b2545] mb-1">Scripture</h3>
             <p className="text-gray-600">Grounded in Biblical truth</p>
@@ -52,7 +54,7 @@ export default function Home() {
         </ScrollGasp>
 
         {/* Featured Sermon Section */}
-        <ScrollGasp className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6 min-h-[60vh] flex flex-col justify-center">
+        <ScrollGasp className="w-full bg-[#ffc857]/80 rounded-lg shadow p-6 min-h-[90vh] flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Featured Sermon</h2>
           <p className="mb-2">From Our Previous Consecutive Teaching Collection</p>
           <div className="mb-2">
@@ -79,7 +81,7 @@ export default function Home() {
         </ScrollGasp>
 
         {/* Stay Connected Section */}
-        <ScrollGasp className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6 min-h-[60vh] flex flex-col justify-center">
+        <ScrollGasp className="w-full bg-[#1a1a40]/80 rounded-lg shadow p-6 min-h-[90vh] flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Stay Connected Online</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="flex flex-col items-center">
@@ -101,7 +103,7 @@ export default function Home() {
         </ScrollGasp>
 
         {/* Plan Your Visit Section */}
-        <ScrollGasp className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6 min-h-[60vh] flex flex-col justify-center">
+        <ScrollGasp className="w-full bg-white/80 rounded-lg shadow p-6 min-h-[90vh] flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Plan Your Visit</h2>
           <p className="mb-2">We'd love to meet you! Whether you're new to faith, just visiting, or looking for a church home — you're welcome here.</p>
           <div className="mb-2">
@@ -130,7 +132,7 @@ export default function Home() {
         </ScrollGasp>
 
         {/* Impact Stories Section */}
-        <ScrollGasp className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6 min-h-[60vh] flex flex-col justify-center">
+        <ScrollGasp className="w-full bg-white/80 rounded-lg shadow p-6 min-h-[90vh] flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Impact Stories</h2>
           <div className="space-y-4">
             <blockquote className="border-l-4 border-[#ffc857] pl-4 italic text-gray-700">
@@ -153,7 +155,7 @@ export default function Home() {
 
         {/* Connect & Engage Section */}
         <ScrollGasp>
-          <section className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6 min-h-[60vh] flex flex-col justify-center">
+          <section className="w-screen bg-white/80 rounded-lg shadow min-h-screen flex flex-col justify-center">
             <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Connect & Engage</h2>
             <form className="space-y-4">
               <input type="text" placeholder="Your Name" className="w-full border rounded px-3 py-2" />
@@ -163,9 +165,9 @@ export default function Home() {
             </form>
           </section>
         </ScrollGasp>
-<ScrollGasp>
+        <ScrollGasp>
         {/* Newsletter Section */}
-        <section className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6">
+        <section className="w-screen bg-white/80 rounded-lg shadow min-h-screen">
           <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Stay Updated</h2>
           <form className="flex gap-2">
             <input type="email" placeholder="Your Email Address" className="flex-1 border rounded px-3 py-2" />
@@ -175,7 +177,7 @@ export default function Home() {
         </ScrollGasp>
 <ScrollGasp>
         {/* Contact Info Section */}
-        <section className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6">
+        <section className="w-screen bg-white/80 rounded-lg shadow min-h-screen">
           <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Contact Info</h2>
           <ul className="space-y-2">
             <li>+251 926 141 414</li>
@@ -187,7 +189,7 @@ export default function Home() {
         </ScrollGasp>
 
         {/* Partner with Us Section */}
-        <ScrollGasp className="max-w-3xl mx-auto bg-white/80 rounded-lg shadow p-6 text-center min-h-[60vh] flex flex-col justify-center">
+        <ScrollGasp className="w-full bg-white/80 rounded-lg shadow text-center min-h-[90vh] flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Partner with Us</h2>
           <p className="mb-4">Help us advance the Kingdom through your generous giving</p>
           <button className="bg-[#ffc857] text-[#1a1a40] px-6 py-2 rounded shadow hover:bg-[#e1ad01]">Give Now</button>
@@ -207,4 +209,4 @@ export default function Home() {
     </>
   );
 }
-           
+
