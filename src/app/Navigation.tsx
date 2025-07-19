@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <nav className="w-full mb-8 bg-[#f9f9f9] text-[#222222] shadow-md">
+    <nav className="w-full fixed top-0 left-0 z-50 bg-white/60 backdrop-blur-md text-[#222222] pt-2 border-b border-white/30">
       <ul className="flex justify-center items-center gap-6 py-4 text-lg font-semibold">
         <li>
           <Link href="/" className="px-4 py-2 rounded transition-colors hover:bg-[#1a1a40] hover:text-[#ffc857]">Home</Link>
