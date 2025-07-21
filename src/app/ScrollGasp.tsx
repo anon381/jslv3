@@ -6,7 +6,7 @@ interface ScrollGaspProps {
   className?: string;
 }
 
-export default function ScrollGasp({ children, className = "" }: ScrollGaspProps) {
+export default function ScrollGasp({ children, className = "", direction = "left" }: ScrollGaspProps & { direction?: "left" | "right" }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -24,11 +24,13 @@ export default function ScrollGasp({ children, className = "" }: ScrollGaspProps
     return () => observer.disconnect();
   }, []);
 
+  const slideClass = direction === "right" ? "animate-slide-in-right" : "animate-slide-in-left";
+
   return (
     <div
       ref={ref}
       className={
-        `${className} ${visible ? "animate-gasp" : "opacity-0 scale-95"}`
+        `${className} ${visible ? slideClass : "opacity-0"}`
       }
     >
       {children}
