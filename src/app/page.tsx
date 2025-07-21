@@ -12,72 +12,82 @@ export default function Home() {
       <ParallaxBG />
       <main className="bg-[#f9f9f9] text-[#222222] min-h-screen p-8 pt-24 space-y-12">
         {/* Welcome Section */}
-        <ScrollGasp className="text-center min-h-[90vh] flex flex-col justify-center bg-[#f9f9f9]">
-          <h1 className="text-3xl font-bold text-[#0b2545] mb-2">Encounter Jesus. Grow in the Word. Impact the World.</h1>
-          <p className="text-lg mb-4">Join us for spirit-filled teachings, vibrant community, and engaging online presence.</p>
-          <div className="flex flex-wrap justify-center gap-4 mb-4">
-            <button className="bg-[#ffc857] text-[#1a1a40] px-6 py-2 rounded shadow hover:bg-[#e1ad01] transition">Visit Us This Sunday</button>
-            <button className="bg-[#0b2545] text-white px-6 py-2 rounded shadow hover:bg-[#1a1a40] transition">Watch Latest Sermon</button>
-            <button className="bg-[#f0f0f0] text-[#0b2545] px-6 py-2 rounded shadow hover:bg-[#ffc857] transition">Follow Us Online</button>
-          </div>
+        <ScrollGasp direction="left" className="text-center min-h-[90vh] flex flex-col justify-center bg-[#f9f9f9]">
+          <ScrollGasp direction="right">
+            <h1 className="text-3xl font-bold text-[#0b2545] mb-2">Encounter Jesus. Grow in the Word. Impact the World.</h1>
+            <p className="text-lg mb-4">Join us for spirit-filled teachings, vibrant community, and engaging online presence.</p>
+            <div className="flex flex-wrap justify-center gap-4 mb-4">
+              <button className="bg-[#ffc857] text-[#1a1a40] px-6 py-2 rounded shadow hover:bg-[#e1ad01] transition">Visit Us This Sunday</button>
+              <button className="bg-[#0b2545] text-white px-6 py-2 rounded shadow hover:bg-[#1a1a40] transition">Watch Latest Sermon</button>
+              <button className="bg-[#f0f0f0] text-[#0b2545] px-6 py-2 rounded shadow hover:bg-[#ffc857] transition">Follow Us Online</button>
+            </div>
+          </ScrollGasp>
         </ScrollGasp>
 
         {/* About Section */}
-        <ScrollGasp className="w-full bg-[#e1ad01]/80 rounded-lg shadow p-6 min-h-[90vh] flex flex-col justify-center">
-          <h2 className="text-2xl font-bold text-[#0b2545] mb-2">About JSL Church</h2>
-          <p className="mb-2">We are a Bible-teaching, Christ-centered church committed to proclaiming Jesus Christ and preaching the word of God. Founded by Pastor Zenebech Gessesse and her husband Engineer Luelkal Kassie Eleven years ago, we are dedicated to spreading the Gospel and building a strong community of believers.</p>
-          <button className="bg-[#0b2545] text-white px-4 py-2 rounded hover:bg-[#1a1a40]">Learn More About Our Story</button>
+        <ScrollGasp direction="right" className="w-full bg-[#e1ad01]/80 rounded-lg shadow min-h-[90vh] flex flex-col justify-center">
+          <ScrollGasp direction="left">
+            <h2 className="text-2xl font-bold text-[#0b2545] mb-2">About JSL Church</h2>
+            <p className="mb-2">We are a Bible-teaching, Christ-centered church committed to proclaiming Jesus Christ and preaching the word of God. Founded by Pastor Zenebech Gessesse and her husband Engineer Luelkal Kassie Eleven years ago, we are dedicated to spreading the Gospel and building a strong community of believers.</p>
+            <button className="bg-[#0b2545] text-white px-4 py-2 rounded hover:bg-[#1a1a40]">Learn More About Our Story</button>
+          </ScrollGasp>
         </ScrollGasp>
 
         {/* Core Values Section */}
-        <ScrollGasp className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 min-h-[90vh] items-center bg-[#0b2545]/80">
-          <div className="bg-white rounded-lg shadow p-4">
-            <h3 className="text-xl font-bold text-[#0b2545] mb-1">Scripture</h3>
-            <p className="text-gray-600">Grounded in Biblical truth</p>
-          </div>
-          <div className="bg-white rounded-lg shadow p-4">
-            <h3 className="text-xl font-bold text-[#0b2545] mb-1">Discipleship</h3>
-            <p className="text-gray-600">Growing together in faith</p>
-          </div>
-          <div className="bg-white rounded-lg shadow p-4">
-            <h3 className="text-xl font-bold text-[#0b2545] mb-1">Worship</h3>
-            <p className="text-gray-600">Heartfelt praise and prayer</p>
-          </div>
-          <div className="bg-white rounded-lg shadow p-4">
-            <h3 className="text-xl font-bold text-[#0b2545] mb-1">Outreach</h3>
-            <p className="text-gray-600">Serving our community</p>
-          </div>
-          <div className="bg-white rounded-lg shadow p-4">
-            <h3 className="text-xl font-bold text-[#0b2545] mb-1">Media Teaching</h3>
-            <p className="text-gray-600">Dive deeper into God's Word with our weekly teachings</p>
-          </div>
+        <ScrollGasp direction="left" className="flex min-h-[90vh] items-center justify-center bg-[#0b2545]/80">
+          <ScrollGasp direction="right" className="w-full h-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full h-full">
+              <div className="bg-white rounded-lg shadow p-8 flex flex-col justify-center items-center h-full w-full text-center text-lg">
+                <h3 className="text-2xl font-bold text-[#0b2545] mb-2">Scripture</h3>
+                <p className="text-gray-600">Grounded in Biblical truth</p>
+              </div>
+              <div className="bg-white rounded-lg shadow p-8 flex flex-col justify-center items-center h-full w-full text-center text-lg">
+                <h3 className="text-2xl font-bold text-[#0b2545] mb-2">Discipleship</h3>
+                <p className="text-gray-600">Growing together in faith</p>
+              </div>
+              <div className="bg-white rounded-lg shadow p-8 flex flex-col justify-center items-center h-full w-full text-center text-lg">
+                <h3 className="text-2xl font-bold text-[#0b2545] mb-2">Worship</h3>
+                <p className="text-gray-600">Heartfelt praise and prayer</p>
+              </div>
+              <div className="bg-white rounded-lg shadow p-8 flex flex-col justify-center items-center h-full w-full text-center text-lg">
+                <h3 className="text-2xl font-bold text-[#0b2545] mb-2">Outreach</h3>
+                <p className="text-gray-600">Serving our community</p>
+              </div>
+              <div className="bg-white rounded-lg shadow p-8 flex flex-col justify-center items-center h-full w-full text-center text-lg">
+                <h3 className="text-2xl font-bold text-[#0b2545] mb-2">Media Teaching</h3>
+                <p className="text-gray-600">Dive deeper into God's Word with our weekly teachings</p>
+              </div>
+            </div>
+          </ScrollGasp>
         </ScrollGasp>
 
         {/* Featured Sermon Section */}
-        <ScrollGasp className="w-full bg-[#ffc857]/80 rounded-lg shadow p-6 min-h-[90vh] flex flex-col justify-center">
-          <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Featured Sermon</h2>
-          <p className="mb-2">From Our Previous Consecutive Teaching Collection</p>
-          <div className="mb-2">
-            <span className="font-semibold">Book of Revelation</span> — Joining Engineer Pastor Luelkal Kassie to walk through the book of Revelation, line by line
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-            <div className="bg-[#f0f0f0] rounded p-4">
-              <h3 className="font-bold text-[#0b2545]">The Power of Prayer</h3>
-              <span className="text-xs text-gray-500">Jan 14</span>
-              <p className="text-sm">Prayer</p>
+        <ScrollGasp direction="right" className="w-full bg-[#ffc857]/80 rounded-lg shadow min-h-[90vh] flex flex-col justify-center">
+          <ScrollGasp direction="left">
+            <h2 className="text-2xl font-bold text-[#0b2545] mb-2">Featured Sermon</h2>
+            <p className="mb-2">From Our Previous Consecutive Teaching Collection</p>
+            <div className="mb-2">
+              <span className="font-semibold">Book of Revelation</span> — Joining Engineer Pastor Luelkal Kassie to walk through the book of Revelation, line by line
             </div>
-            <div className="bg-[#f0f0f0] rounded p-4">
-              <h3 className="font-bold text-[#0b2545]">Living with Purpose</h3>
-              <span className="text-xs text-gray-500">Jan 7</span>
-              <p className="text-sm">Faith</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+              <div className="bg-[#f0f0f0] rounded p-4">
+                <h3 className="font-bold text-[#0b2545]">The Power of Prayer</h3>
+                <span className="text-xs text-gray-500">Jan 14</span>
+                <p className="text-sm">Prayer</p>
+              </div>
+              <div className="bg-[#f0f0f0] rounded p-4">
+                <h3 className="font-bold text-[#0b2545]">Living with Purpose</h3>
+                <span className="text-xs text-gray-500">Jan 7</span>
+                <p className="text-sm">Faith</p>
+              </div>
+              <div className="bg-[#f0f0f0] rounded p-4">
+                <h3 className="font-bold text-[#0b2545]">God's Grace in Action</h3>
+                <span className="text-xs text-gray-500">Dec 31</span>
+                <p className="text-sm">Grace</p>
+              </div>
             </div>
-            <div className="bg-[#f0f0f0] rounded p-4">
-              <h3 className="font-bold text-[#0b2545]">God's Grace in Action</h3>
-              <span className="text-xs text-gray-500">Dec 31</span>
-              <p className="text-sm">Grace</p>
-            </div>
-          </div>
-          <button className="bg-[#ffc857] text-[#1a1a40] px-4 py-2 rounded mt-4 hover:bg-[#e1ad01]">Explore More Teachings</button>
+            <button className="bg-[#ffc857] text-[#1a1a40] px-4 py-2 rounded mt-4 hover:bg-[#e1ad01]">Explore More Teachings</button>
+          </ScrollGasp>
         </ScrollGasp>
 
         {/* Stay Connected Section */}
