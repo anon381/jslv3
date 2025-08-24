@@ -51,7 +51,7 @@ export default function Home() {
               </div>
               <div className="bg-white rounded-lg shadow p-8 flex flex-col justify-center items-center h-full w-full text-center text-lg">
                 <h3 className="text-2xl font-bold text-[#0b2545] mb-2">Outreach</h3>
-                <p className="text-gray-600">Serving our community</p>
+                <p className="text-gray-600">Serving the community</p>
               </div>
               <div className="bg-white rounded-lg shadow p-8 flex flex-col justify-center items-center h-full w-full text-center text-lg">
                 <h3 className="text-2xl font-bold text-[#0b2545] mb-2">Media Teaching</h3>
@@ -156,7 +156,7 @@ export default function Home() {
               <span className="text-xs text-gray-500">Youth Leader</span>
             </blockquote>
             <blockquote className="border-l-4 border-[#ffc857] pl-4 italic text-gray-700">
-              "It's more than just a church — it's a family"<br />
+              "It's more than just a church  it's a family"<br />
               <span className="block font-bold mt-2">DR. Saron</span>
               <span className="text-xs text-gray-500">NEHMIA member</span>
             </blockquote>
@@ -212,7 +212,7 @@ export default function Home() {
           <div className="mb-2">Quick Links: Home | About Us | Sermons | Plan a Visit | Contact</div>
           <div className="mb-2">Service Times: Sunday Morning: 10:00 AM - 01:30 PM | Monday Morning: 9:00 AM - 12:00 PM | Tuesday Morning: 10:00 AM - 5:00 PM | Thursday Evening: 05:00 PM - 08:30 PM</div>
           <div className="mb-2">Addis Ketema Sub City, Asko-Addis Sefer Lizmender, Addis Ababa, Ethiopia</div>
-          <div className="mb-2">Follow Us</div>
+          <div className="mb-2">Follow-Us</div>
           <div className="mb-2">© 2025 Jesus the Spring of Life International Church. All rights reserved.</div>
         </footer>
       </main>
